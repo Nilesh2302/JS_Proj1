@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .a {
+            margin-left: 400px;
+            margin-top: 250px;
+
+        }
+
+        #cnt,
+        #inc,
+        #dec,
+        #res,
+        .c {
+            font-size: xx-large;
+        }
+
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body class="b">
+    <div class="a">
+        <label for="cnt" class="c">Counter : </label>
+        <input type="number" id="cnt" name="cnt" required>
+
+        <button id="inc" onclick="inc()">+</button>
+        <button id="dec" onclick="dec()">-</button>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        let cnt = document.getElementById("cnt");
+        let res = document.getElementById("res");
+        function inc() {
+            cnt.value = parseInt(cnt.value) + 1;
+            res.textContent = cnt.value;
+
+        }
+
+        function dec() {
+            cnt.value = parseInt(cnt.value) - 1;
+            res.textContent = cnt.value;
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+
+</html>
